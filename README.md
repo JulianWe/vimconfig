@@ -210,3 +210,5 @@ let g:ansible_name_highlight = 'b'
 
 
 ```  
+
+![vimconfig](images/bild.jpg)
