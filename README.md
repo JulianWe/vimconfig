@@ -11,27 +11,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 autocmd FileType yaml setlocal ai ts=2 sw=2 et nu cuc
 autocmd FileType yaml colo desert
-
-
-In File: vim ~/.vimrc
-
-
-Editor remove all comments:
-g/^#/d
-
-Editor remove all:
-:1,$d
-
-
-
-====================================================
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
-
-autocmd FileType yaml setlocal ai ts=2 sw=2 et nu cuc
-autocmd FileType yaml colo desert
 set relativenumber
 
 " spaces & tabs
@@ -60,7 +39,7 @@ let mapleader =" "
 let maplocalleader = "\\"
 
 " buffer navigation
-nnoremap <C-N> :bnext<CR>
+
 nnoremap <C-P> :bprev<CR>
 " map esc to jk
 inoremap jk <esc>
