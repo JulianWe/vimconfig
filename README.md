@@ -96,7 +96,7 @@ au BufRead,BufNewFile /playbooks/.yml set filetype=yaml.ansible
 let g:ansible_name_highlight = 'b'
 ```  
 
-![vimconfig](images/bild.jpg)
+![vimconfig](images/vim.jpg)
 
 **Install zsh on mac cli** 
 [Source ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master)
@@ -118,6 +118,7 @@ plugins=(
 ``` 
 ![vimconfig](images/zsh.jpg)
 
+[GitHub zsh Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 [GitHub zsh Plugin](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh)
 [GitHub CLI](https://cli.github.com/)
 
