@@ -6,7 +6,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ``` 
 
-
+**create ~/.vimrc file**
 ```yaml
 autocmd FileType yaml setlocal ai ts=2 sw=2 et nu cuc
 autocmd FileType yaml colo desert
@@ -56,7 +56,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
     " Ansible snippets
     Plug 'phenomenes/ansible-snippets'
-    Plug 'SirVer/ultisnips'
+    " Plug 'SirVer/ultisnips'
 call plug#end()
 
 "Airline things
@@ -94,8 +94,34 @@ let g:ansible_with_keywords_highlight = 'Constant'
 let g:ansible_template_syntaxes = { '*.rb.j2': 'ruby' }
 au BufRead,BufNewFile /playbooks/.yml set filetype=yaml.ansible
 let g:ansible_name_highlight = 'b'
-
-
 ```  
 
 ![vimconfig](images/bild.jpg)
+
+**Install zsh on mac cli** 
+[Source ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master)
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ 
+
+vi ~/.zshrc
+
+plugins=(
+  git
+  bundler
+  dotenv
+  macos
+  rake
+  rbenv
+  ruby
+)
+``` 
+![vimconfig](images/zsh.jpg)
+
+[GitHub zsh Plugin](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh)
+[GitHub CLI](https://cli.github.com/)
+
+
+
+
+
